@@ -1,4 +1,5 @@
 #!/bin/bash
+
 sh -c '
 #On Raspbian Stretch we need to install old libssl (1.02 to be exact)
 sudo apt-get update
