@@ -9,7 +9,7 @@ sudo apt-get install -y libssl1.0-dev git cmake build-essential curl libcurl4-op
 cd ~
 mkdir Source
 cd Source
-git clone --recursive https://github.com/azure/azure-iot-sdk-c.git
+git clone --recursive https://github.com/azure/azure-iot-sdk-c.git -b public-preview
 
 cd azure-iot-sdk-c/build_all/linux
 ./build.sh --no-make
@@ -71,7 +71,7 @@ else
     echo "cmake version check pass (current:$CMAKE_VER,require:$CMAKE_LEAST)"
 fi
 
-git clone git://git.drogon.net/wiringPi
+git clone https://github.com/WiringPi/WiringPi
 cd ./wiringPi
 ./build
 cd ..
