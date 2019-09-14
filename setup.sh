@@ -72,7 +72,7 @@ else
 fi
 
 git clone https://github.com/WiringPi/WiringPi
-cd ./wiringPi
+cd ./WiringPi
 ./build
 cd ..
 
