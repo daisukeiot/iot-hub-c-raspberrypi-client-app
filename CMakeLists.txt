@@ -14,8 +14,8 @@ set(SOURCE main.c bme280.c wiring.c telemetry.c parson.c config.h bme280.h wirin
 add_executable(app ${SOURCE})
 target_link_libraries(app wiringPi
                           serializer
-                          iothub_client
                           iothub_client_mqtt_transport
+                          iothub_client
                           umqtt
                           aziotsharedutil
                           ssl
