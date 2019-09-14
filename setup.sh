@@ -13,7 +13,7 @@ cd Source
 git clone --recursive https://github.com/azure/azure-iot-sdk-c.git -b public-preview
 
 cd azure-iot-sdk-c/build_all/linux
-./build.sh --no-make
+./build.sh --no-make --provisioning
 
 cd ../../cmake/iotsdk_linux
 make
